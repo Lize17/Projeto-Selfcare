@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>site self-care</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="imagens/selfcare.png" alt="logo" class="logo" />
+
+      <div class="divPesquisa">
+        <input class="pesquisa" placeholder="Pesquisa">
+        </input>
+        <button class="botao"><img src="imagens/lupa.png" alt="logo" class="lupa" /> </button>
+
+        <button class="botao"><img src="imagens/login.png" alt="logo" class="login" onclick="openForm()" /> </button>
+
+        <a href="chat.html"><button class="botao"><img src="imagens/chat.png" alt="logo" class="chat" /> </button></a>
+
+        <button class="botao"><img src="imagens/favoritos.png" alt="logo" class="chat" /> </button>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="divMenu">
+        <button class="botao" id="socialButton"><img src="imagens/menu.png" alt="logo" class="menu" /> </button>
+        <div class="divSocial hidden">
+          <button class="botao"><img src="imagens/social/compartilhar.png" class="chat" /> </button>
+
+          <button class="botao"><img src="imagens/social/git.png" class="chat" /> </button>
+
+          <button class="botao"><img src="imagens/social/in.png" class="chat" /> </button>
+
+          <button class="botao"><img src="imagens/social/inst.png" class="chat" /> </button>
+        </div>
+      </div>
+
+      <div class='navigation'>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://pt.quizur.com/quiz/teste-o-seu-autocuidado-QniV">QUIZZ</a></li>
+            <li><a href="dicas.html">TOP DICAS</a></li>
+            <li><a href="reco.html">CALCULO DE IMC</a></li>
+            <li><a href="ideas.html">SELF-CARE IDEAS</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="content">
+      <img src="imagens/INICIO.png" alt="logo" class="inicioimg" />
+
+
+    </div>
+    <!-- Slideshow container -->
+    <div class='divSlide'>
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="slide">
+            <a href="#popup1"><img class="img" src="imagens/slides/diario.webp"></a>
+            <a href="#popup2"><img class="img" src="imagens/slides/yoga.jpg"></a>
+            <a href="#popup3"><img class="img" src="imagens/slides/ajuda.jpeg"></a>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="slide">
+            <a href="#popup4"><img class="img" src="imagens/slides/correr.jpeg"></a>
+            <a href="#popup5"><img class="img" src="imagens/slides/festa.jpeg"></a>
+            <a href="#popup6"><img class="img" src="imagens/slides/viagem.jpeg"></a>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="slide">
+          <a href="#popup7"><img class="img" src="imagens/slides/agua.jpg"></a>
+            <a href="#popup8"><img class="img" src="imagens/slides/beleza.jpg"></a>
+            <a href="#popup9"><img class="img" src="imagens/slides/seame.jpg"></a>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+
+
+      </div>
+
+    </div>
+    <div class='controleDiv'>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <h1 id="dtext">TOP DICAS EM DESTAQUE!</h1>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+
+
+    <div class="footer">
+      <div class="rodape">
+        <nav>
+          <ul>
+            <li><a href="mailto:laize.santos@soulasalle.com.br">PRECISA DE AJUDA?</a></li>
+            <li><a href="sobre.html">SOBRE O SELF-CARE</a></li>
+
+          </ul>
+        </nav>
+
+        <div class="divSocial" style="display: block; opacity: 1">
+          <a href="https://www.google.com.br/" class="botao"><img src="imagens/social/compartilhar.png" class="chat" />
+          </a>
+
+          <a class="botao" href="https://github.com/Lize17"><img src="imagens/social/git.png" class="chat" /> </a>
+
+          <a class="botao" href="https://www.linkedin.com/in/la%C3%ADze-santos/"><img src="imagens/social/in.png" class="chat" /> </a>
+
+          <a class="botao" href="https://www.instagram.com/httlize/?next=%2F"><img src="imagens/social/inst.png" class="chat" /> </a>
+        </div>
+      </div>
+      <p id="direitos">&copy; 2023 Todos os direitos reservados a Dev Lize</p>
+    </div>
+    <!-- The form -->
+    <div class="form-popup" id="myForm">
+      <form action="" class="form-container">
+        <p id="erro" style="color: red; display: none">Usuário ou senha incorreta</p>
+        <h1>Login</h1>
+
+        <label><b>Usuário</b></label>
+        <input id="username" type="text" placeholder="Usuário" required>
+
+        <label><b>Senha</b></label>
+        <input id="password" type="password" placeholder="Senha" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Sair</button>
+      </form>
+    </div>
+
+    <!-- estudo -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Gratidão</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Pratique a gratidão escrevendo em um diário
+        </div>
+      </div>
+    </div>
+    <!-- Meditar -->
+    <div id="popup2" class="overlay">
+      <div class="popup">
+        <h2>Meditar</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Reserve tempo para relaxar e praticar a meditação
+        </div>
+      </div>
+    </div>
+    <!-- Ajuda -->
+    <div id="popup3" class="overlay">
+      <div class="popup">
+        <h2>Ajuda</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Aprenda a delegar tarefas e peça ajuda quando necessário
+        </div>
+      </div>
+    </div>
+    <!-- Correr -->
+    <div id="popup4" class="overlay">
+      <div class="popup">
+        <h2>Exercícios</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Faça exercícios regularmente para manter o corpo saudável
+        </div>
+      </div>
+    </div>
+    <!-- festa -->
+    <div id="popup5" class="overlay">
+      <div class="popup">
+        <h2>Socialização</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Mantenha contato com amigos e familiares
+        </div>
+      </div>
+    </div>
+    <!-- viagem -->
+    <div id="popup6" class="overlay">
+      <div class="popup">
+        <h2>Seja Livre</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Explore a natureza e aproveite o ar livre
+        </div>
+      </div>
+    </div>
+    <!-- Produtos -->
+    <div id="popup7" class="overlay">
+      <div class="popup">
+        <h2>Cuide-se</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Mantenha uma dieta equilibrada e beba bastante água
+        </div>
+      </div>
+    </div>
+    <!-- maquiagem -->
+    <div id="popup8" class="overlay">
+      <div class="popup">
+        <h2>Auto cuido Físico</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Cuide da sua higiene pessoal e aparência
+        </div>
+      </div>
+    </div>
+    <!-- seame -->
+    <div id="popup9" class="overlay">
+      <div class="popup">
+        <h2>Se ame</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Pratique a autocompaixão e seja gentil consigo mesmo
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

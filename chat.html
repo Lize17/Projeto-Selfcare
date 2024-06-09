@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>site self-care</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container2">
+    <div class="header">
+      <img src="imagens/selfcare.png" alt="logo" class="logo" />
+
+      <div class="divPesquisa">
+        <input class="pesquisa" placeholder="Pesquisa">
+        </input>
+        <button class="botao"><img src="imagens/lupa.png" alt="logo" class="lupa" /> </button>
+
+        <button class="botao"><img src="imagens/login.png" alt="logo" class="login" onclick="openForm()" /> </button>
+
+        <button class="botao"><img src="imagens/chat.png" alt="logo" class="chat" /> </button>
+
+        <button class="botao"><img src="imagens/favoritos.png" alt="logo" class="chat" /> </button>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="divMenu">
+        <button class="botao" id="socialButton"><img src="imagens/menu.png" alt="logo" class="menu" /> </button>
+        <div class="divSocial hidden">
+          <button class="botao"><img src="imagens/social/compartilhar.png" class="chat" /> </button>
+
+          <button class="botao"><img src="imagens/social/git.png" class="chat" /> </button>
+
+          <button class="botao"><img src="imagens/social/in.png" class="chat" /> </button>
+
+          <button class="botao"><img src="imagens/social/inst.png" class="chat" /> </button>
+        </div>
+      </div>
+
+
+
+
+      <div class='navigation'>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://pt.quizur.com/quiz/teste-o-seu-autocuidado-QniV">QUIZZ</a></li>
+            <li><a href="dicas.html">TOP DICAS</a></li>
+            <li><a href="reco.html">CALCULO DE IMC</a></li>
+            <li><a href="ideas.html">SELF-CARE IDEAS</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    </div>
+    <div class="divMens">
+      <div class="divChat">
+        <div class="divMensagens">
+          <div class="enviado">
+            <div class="mensEnviado">
+              <p>Olá, tudo bem?</p>
+            </div>
+          </div>
+          <div class="recebido">
+
+          </div>
+        </div>
+        <div class="divInput">
+          <input id="mensInpt" class="textInput" placeholder="Escreva aqui sua mensagem" />
+          <button class="enviar" onclick="enviar()"><i class="fa fa-send-o"
+              style="font-size:48px;color:#E71997"></i></button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="footer">
+    <div class="rodape">
+      <nav>
+        <ul>
+          <li><a href="mailto:laize.santos@soulasalle.com.br">PRECISA DE AJUDA?</a></li>
+          <li><a href="sobre.html">SOBRE O SELF-CARE</a></li>
+
+        </ul>
+      </nav>
+
+      <div class="divSocial" style="display: block; opacity: 1">
+        <a href="https://www.google.com.br/" class="botao"><img src="imagens/social/compartilhar.png" class="chat" />
+        </a>
+
+        <button class="botao"><img src="imagens/social/git.png" class="chat" /> </button>
+
+        <button class="botao"><img src="imagens/social/in.png" class="chat" /> </button>
+
+        <button class="botao"><img src="imagens/social/inst.png" class="chat" /> </button>
+      </div>
+    </div>
+
+    <p id="direitos">&copy; 2023 Todos os direitos reservados a Dev Lize</p>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
